@@ -8,6 +8,7 @@
     <li>User Profile</li>
     <li>Password Reset</li>
     <li>Dashboard</li>
+    <li>User Profile</li>
 </ul>
 
 ## Technology
@@ -16,6 +17,7 @@
     <li>Laravel</li>
     <li>MySQL</li>
     <li>JavaScript</li>
+    <li>Axios</li>
     <li>HTML</li>
     <li>CSS</li>
     <li>Bootstrap</li>
