@@ -1,7 +1,7 @@
-## POS Application
-<blockquote><p>This is a simple web-based open source POS (point of sale) system.</p></blockquote>
+## Inventory Management System (POS Application)
+<blockquote><p>This is a simple web-based open-source POS (point of sale) system of Inventory Management.</p></blockquote>
 
-## Features of EbookShare
+## Features of Inventory Management System
 <ul>
     <li>Login System</li>
     <li>Registration System</li>
