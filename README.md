@@ -81,12 +81,56 @@
     </thead>
 </table>
 
-## Dashboard Page
+## Customer Page
 <table>
     <thead>
         <tr>
             <th>
-                <img src="screenshots/dashboard.png" alt="dashboard-page ss">
+                <img src="screenshots/customer.jpg" alt="dashboard-page ss">
+            </th>
+        </tr>
+    </thead>
+</table>
+
+## Customer Create Page
+<table>
+    <thead>
+        <tr>
+            <th>
+                <img src="screenshots/customerCreate.jpg" alt="dashboard-page ss">
+            </th>
+        </tr>
+    </thead>
+</table>
+
+## Category Page
+<table>
+    <thead>
+        <tr>
+            <th>
+                <img src="screenshots/customerCreate.jpg" alt="dashboard-page ss">
+            </th>
+        </tr>
+    </thead>
+</table>
+
+## Product Create Page
+<table>
+    <thead>
+        <tr>
+            <th>
+                <img src="screenshots/productcreate.jpg" alt="dashboard-page ss">
+            </th>
+        </tr>
+    </thead>
+</table>
+
+## Product List Page
+<table>
+    <thead>
+        <tr>
+            <th>
+                <img src="screenshots/productList.jpg" alt="dashboard-page ss">
             </th>
         </tr>
     </thead>
