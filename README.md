@@ -80,3 +80,14 @@
         </tr>
     </thead>
 </table>
+
+## Dashboard Page
+<table>
+    <thead>
+        <tr>
+            <th>
+                <img src="screenshots/dashboard.png" alt="dashboard-page ss">
+            </th>
+        </tr>
+    </thead>
+</table>
