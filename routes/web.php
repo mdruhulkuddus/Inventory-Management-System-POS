@@ -7,6 +7,8 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductContrller;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\InvoiceController;
+
 // login & registration routes
 Route::post('/user-registration', [UserController::class, 'UserRegistration']);
 Route::post('/user-login', [UserController::class, 'UserLogin']);
@@ -34,6 +36,8 @@ Route::get('/userProfile',[UserController::class,'ProfilePage'])->middleware([To
 Route::get('/categoryPage',[CategoryController::class,'CategoryPage'])->middleware([TokenVerifyMiddleware::class]);
 Route::get('/customerPage',[CustomerController::class,'CustomerPage'])->middleware([TokenVerifyMiddleware::class]);
 Route::get('/productPage',[ProductContrller::class,'ProductPage'])->middleware([TokenVerifyMiddleware::class]);
+Route::get('/invoicePage',[InvoiceController::class,'InvoicePage'])->middleware([TokenVerifyMiddleware::class]);
+Route::get('/salePage',[InvoiceController::class,'SalePage'])->middleware([TokenVerifyMiddleware::class]);
 
 
 // Category API
@@ -57,3 +61,13 @@ Route::post('/delete-product',[ProductContrller::class,'DeleteProduct'])->middle
 Route::get('/list-product',[ProductContrller::class,'ListProduct'])->middleware([TokenVerifyMiddleware::class]);
 Route::post('/update-product',[ProductContrller::class,'UpdateProduct'])->middleware([TokenVerifyMiddleware::class]);
 Route::post('/product-by-id',[ProductContrller::class,'ProductByID'])->middleware([TokenVerifyMiddleware::class]);
+
+// Invoice API
+Route::post('/create-invoice',[InvoiceController::class,'invoiceCreate'])->middleware([TokenVerifyMiddleware::class]);
+Route::post('/delete-invoice',[InvoiceController::class,'invoiceDelete'])->middleware([TokenVerifyMiddleware::class]);
+Route::post('/invoice-details',[InvoiceController::class,'invoiceDetails'])->middleware([TokenVerifyMiddleware::class]);
+Route::get('/invoice-select',[InvoiceController::class,'invoiceSelect'])->middleware([TokenVerifyMiddleware::class]);
+
+// Summary & Report
+Route::get('/summary', [DashboardController::class, 'Summary'])->middleware([TokenVerifyMiddleware::class]);
+
