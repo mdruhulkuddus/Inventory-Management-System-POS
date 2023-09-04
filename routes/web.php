@@ -8,6 +8,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductContrller;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\InvoiceController;
+use App\Http\Controllers\ReportController;
 
 // login & registration routes
 Route::post('/user-registration', [UserController::class, 'UserRegistration']);
@@ -38,6 +39,7 @@ Route::get('/customerPage',[CustomerController::class,'CustomerPage'])->middlewa
 Route::get('/productPage',[ProductContrller::class,'ProductPage'])->middleware([TokenVerifyMiddleware::class]);
 Route::get('/invoicePage',[InvoiceController::class,'InvoicePage'])->middleware([TokenVerifyMiddleware::class]);
 Route::get('/salePage',[InvoiceController::class,'SalePage'])->middleware([TokenVerifyMiddleware::class]);
+Route::get('/reportPage',[ReportController::class,'ReportPage'])->middleware([TokenVerifyMiddleware::class]);
 
 
 // Category API
@@ -68,6 +70,8 @@ Route::post('/delete-invoice',[InvoiceController::class,'invoiceDelete'])->middl
 Route::post('/invoice-details',[InvoiceController::class,'invoiceDetails'])->middleware([TokenVerifyMiddleware::class]);
 Route::get('/invoice-select',[InvoiceController::class,'invoiceSelect'])->middleware([TokenVerifyMiddleware::class]);
 
-// Summary & Report
+// Summary
 Route::get('/summary', [DashboardController::class, 'Summary'])->middleware([TokenVerifyMiddleware::class]);
 
+// Report
+Route::get("/sales-report/{FromDate}/{ToDate}", [ReportController::class, 'SalesReport'])->middleware([TokenVerifyMiddleware::class]);
