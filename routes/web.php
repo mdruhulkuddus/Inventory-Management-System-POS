@@ -27,6 +27,7 @@ Route::get('logout', [UserController::class, 'UserLogout']);
 
 
 // Page Routes
+Route::get('/',[UserController::class,'LoginPage']);
 Route::get('/userLogin',[UserController::class,'LoginPage']);
 Route::get('/userRegistration',[UserController::class,'RegistrationPage']);
 Route::get('/sendOtp',[UserController::class,'SendOtpPage']);

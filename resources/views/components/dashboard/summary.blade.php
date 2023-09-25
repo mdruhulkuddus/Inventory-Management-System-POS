@@ -13,7 +13,7 @@
                         </div>
                         <div class="col-3 col-lg-4 col-md-4 col-sm-3 text-end">
                             <div class="icon icon-shape bg-gradient-primary shadow float-end border-radius-md">
-                                <img class="w-100 " src="{{asset('images/icon.svg')}}"/>
+                                <img class="w-100 " src="{{asset('images/product-25.svg')}}" style="padding: 5px"/>
                             </div>
                         </div>
                     </div>
@@ -33,7 +33,7 @@
                         </div>
                         <div class="col-3 col-lg-4 col-md-4 col-sm-3 text-end">
                             <div class="icon icon-shape bg-gradient-primary shadow float-end border-radius-md">
-                                <img class="w-100 " src="{{asset('images/icon.svg')}}"/>
+                                <img class="w-100 " src="{{asset('images/category-3.svg')}}" style="padding: 5px"/>
                             </div>
                         </div>
                     </div>
@@ -53,7 +53,7 @@
                         </div>
                         <div class="col-3 col-lg-4 col-md-4 col-sm-3 text-end">
                             <div class="icon icon-shape bg-gradient-primary shadow float-end border-radius-md">
-                                <img class="w-100 " src="{{asset('images/icon.svg')}}"/>
+                                <img class="w-100 " src="{{asset('images/customer-2.svg')}}" style="padding: 5px"/>
                             </div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                         </div>
                         <div class="col-3 col-lg-4 col-md-4 col-sm-3 text-end">
                             <div class="icon icon-shape bg-gradient-primary shadow float-end border-radius-md">
-                                <img class="w-100 " src="{{asset('images/icon.svg')}}"/>
+                                <img class="w-100 " src="{{asset('images/invoice-12.svg')}}" style="padding: 5px"/>
                             </div>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                         </div>
                         <div class="col-3 col-lg-4 col-md-4 col-sm-3 text-end">
                             <div class="icon icon-shape bg-gradient-primary shadow float-end border-radius-md">
-                                <img class="w-100 " src="{{asset('images/icon.svg')}}"/>
+                                <img class="w-100 " src="{{asset('images/sale-13.svg')}}" style="padding: 5px"/>
                             </div>
                         </div>
                     </div>
@@ -111,7 +111,7 @@
                         </div>
                         <div class="col-3 col-lg-4 col-md-4 col-sm-3 text-end">
                             <div class="icon icon-shape bg-gradient-primary shadow float-end border-radius-md">
-                                <img class="w-100 " src="{{asset('images/icon.svg')}}"/>
+                                <img class="w-100 " src="{{asset('images/vat-report.svg')}}" style="padding: 5px"/>
                             </div>
                         </div>
                     </div>
@@ -130,7 +130,7 @@
                         </div>
                         <div class="col-3 col-lg-4 col-md-4 col-sm-3 text-end">
                             <div class="icon icon-shape bg-gradient-primary shadow float-end border-radius-md">
-                                <img class="w-100 " src="{{asset('images/icon.svg')}}"/>
+                                <img class="w-100 " src="{{asset('images/discount-35.svg')}}" style="padding: 5px"/>
                             </div>
                         </div>
                     </div>
@@ -149,7 +149,7 @@
                         </div>
                         <div class="col-3 col-lg-4 col-md-4 col-sm-3 text-end">
                             <div class="icon icon-shape bg-gradient-primary shadow float-end border-radius-md">
-                                <img class="w-100 " src="{{asset('images/icon.svg')}}"/>
+                                <img class="w-100 " src="{{asset('images/total-sales-volume.svg')}}" style="padding: 5px"/>
                             </div>
                         </div>
                     </div>

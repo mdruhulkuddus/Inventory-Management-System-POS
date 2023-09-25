@@ -14,6 +14,7 @@ class ReportController extends Controller
     }
 
     function SalesReport(Request $request){
+
         $user_id = $request->header('id');
         $fromDate = date('Y-m-d', strtotime($request->FromDate));
         $toDate = date('Y-m-d', strtotime($request->ToDate));
@@ -22,8 +23,7 @@ class ReportController extends Controller
         $vat = Invoice::where('user_id', $user_id)->whereDate('created_at', '>=', $fromDate)->whereDate('created_at', '<=', $toDate)->sum('vat');
         $payable = Invoice::where('user_id', $user_id)->whereDate('created_at', '>=', $fromDate)->whereDate('created_at', '<=', $toDate)->sum('payable');
         $discount = Invoice::where('user_id', $user_id)->whereDate('created_at', '>=', $fromDate)->whereDate('created_at', '<=', $toDate)->sum('discount');
-        $list = Invoice::where('user_id', $user_id)
-            ->whereDate('created_at', '>=', $fromDate)
+        $list = Invoice::where('user_id', $user_id)->whereDate('created_at', '>=', $fromDate)
             ->whereDate('created_at', '<=', $toDate)
             ->with('customer')->get();
 
@@ -31,9 +31,9 @@ class ReportController extends Controller
             'payable' => $payable,
             'vat' => $vat,
             'discount' => $discount,
-            'total'=>$total,
-            'list'=>$list,
-            'fromDate'=>$fromDate, 'toDate'=> $toDate,
+            'total' => $total,
+            'list' => $list,
+            'fromDate' => $fromDate, 'toDate' => $toDate,
             ];
 
         $pdf = Pdf::loadView('report.sales-report', $data);

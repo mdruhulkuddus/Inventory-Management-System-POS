@@ -24,6 +24,17 @@
 </ul>
 
 ## ScreenShot of this project
+## Dashboard Page
+<table>
+    <thead>
+        <tr>
+            <th>
+                <img src="screenshots/home.png" alt="dashboard-page ss">
+            </th>
+        </tr>
+    </thead>
+</table>
+
 ## Login Page
 <table>
     <thead>
@@ -75,7 +86,7 @@
     <thead>
         <tr>
             <th>
-                <img src="screenshots/dashboard.png" alt="dashboard-page ss">
+                <img src="screenshots/home.png" alt="dashboard-page ss">
             </th>
         </tr>
     </thead>
